@@ -1,7 +1,7 @@
 {
-    "name": "[YOUR-COMPONENT]",
+    "name": "doz-formfield",
     "version": "0.0.0",
-    "description": "[YOUR-COMPONENT-DESCRIPTION]",
+    "description": "a component for DOZ",
     "main": "dist/bundle.js",
     "scripts": {
         "release:before": "npm run-script test",
@@ -16,17 +16,20 @@
     },
     "keywords": [
         "doz",
-        "component"
+        "component",
+        "input",
+        "form",
+        "validation"
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/[YOUR-GITHUB-SPACE]/[YOUR-REPOSITORY].git"
+        "url": "git+https://github.com/dozjs-cmp/doz-formfield.git"
     },
     "bugs": {
-        "url": "https://github.com/[YOUR-GITHUB-SPACE]/[YOUR-REPOSITORY]/issues"
+        "url": "https://github.com/dozjs-cmp/doz-formfield/issues"
     },
-    "homepage": "https://github.com/[YOUR-GITHUB-SPACE]/[YOUR-REPOSITORY]#readme",
-    "author": "[YOUR-NAME]",
+    "homepage": "https://github.com/dozjs-cmp/doz-formfield#readme",
+    "author": "Fabio Ricali",
     "license": "MIT",
     "devDependencies": {
         "babel-core": "^6.26.0",

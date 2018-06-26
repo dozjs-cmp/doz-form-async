@@ -1,3 +1,9 @@
-.my-component {
-    font-size: 24px;
+.doz-formfield input.error,
+.doz-formfield select.error,
+.doz-formfield textarea.error {
+    border-color: red;
+}
+
+.doz-formfield label .required{
+    color: red;
 }

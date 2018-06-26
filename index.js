@@ -3,7 +3,7 @@ import cmp from './lib'
 
 // expose component to global scope
 if (typeof window !== 'undefined') {
-    Doz.component('your-component-tag', cmp)
+    Doz.component('doz-formfield', cmp)
 }
 
 export default cmp
