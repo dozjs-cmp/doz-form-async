@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>DOZ - COMPONENT</title>
     <script src="https://unpkg.com/doz/dist/doz.js?5"></script>
-    <script src="../dist/bundle.js?258953"></script>
+    <script src="../dist/bundle.js?258985536"></script>
     <style>
         body {
             font-family: sans-serif;
@@ -23,10 +23,34 @@
 
     const app = new Doz({
         root: '#app',
-        template: `
-            <doz-formfield label="My label" required="true"></doz-formfield>
-            <doz-formfield label="Email" type="email"></doz-formfield>
-        `
+        template() {
+            return `
+                <doz-form
+                    d:on-submit="$onSubmit"
+                    d:on-validationerror="$onValidationError"
+                    d:on-success="$onSuccess"
+                    d:on-error="$onError"
+                 >
+                    <form>
+                        <doz-formfield label="First name" required="true" name="firstName"></doz-formfield>
+                        <doz-formfield label="Email" required="true" type="email" name="email"></doz-formfield>
+                        <button type="submit">Submit</button>
+                    </form>
+                </doz-form>
+            `
+        },
+        $onSubmit(cmp) {
+            console.log('$onSubmit', cmp);
+        },
+        $onValidationError(errors) {
+            console.warn('$onValidationError', errors);
+        },
+        $onSuccess(response) {
+            console.log('$onSuccess', response);
+        },
+        $onError(error) {
+            console.error('$onError', error);
+        }
     });
 
 </script>

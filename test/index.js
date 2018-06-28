@@ -1,4 +1,4 @@
-import Component from '../lib';
+import Component from '../lib/field/index';
 import be from 'bejs';
 
 describe('my-test', function () {
