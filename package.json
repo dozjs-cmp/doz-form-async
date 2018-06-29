@@ -1,7 +1,7 @@
 {
-    "name": "doz-formfield",
+    "name": "doz-form-async",
     "version": "0.0.0",
-    "description": "a component for DOZ",
+    "description": "A wrapper component that adds AJAX functionality to the form",
     "main": "dist/bundle.js",
     "scripts": {
         "release:before": "npm run-script test",
@@ -23,12 +23,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dozjs-cmp/doz-formfield.git"
+        "url": "git+https://github.com/dozjs-cmp/doz-form-async.git"
     },
     "bugs": {
-        "url": "https://github.com/dozjs-cmp/doz-formfield/issues"
+        "url": "https://github.com/dozjs-cmp/doz-form-async/issues"
     },
-    "homepage": "https://github.com/dozjs-cmp/doz-formfield#readme",
+    "homepage": "https://github.com/dozjs-cmp/doz-form-async#readme",
     "author": "Fabio Ricali",
     "license": "MIT",
     "devDependencies": {

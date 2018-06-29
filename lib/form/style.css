@@ -1,0 +1,11 @@
+input.error,
+select.error,
+textarea.error {
+    outline: none;
+    border-color: red;
+}
+input.error:valid,
+select.error:valid,
+textarea.error:valid {
+    border-style: auto;
+    border-color: inherit;}
