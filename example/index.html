@@ -26,6 +26,7 @@
         template() {
             return `
                 <doz-form-async
+                    d:alias="form"
                     d:on-submit="$onSubmit"
                     d:on-validationerror="$onValidationError"
                     d:on-success="$onSuccess"
@@ -37,8 +38,16 @@
                         <input placeholder="Email" required="required" type="email" name="email">
                         <button type="submit">Submit</button>
                     </form>
+                    <button onclick="this.$populate()">Load data</button>
                 </doz-form-async>
             `
+        },
+        $populate() {
+            this.children.form.$loadData({
+                firstName: 'Manuel',
+                lastName: 'Ricali',
+                email: 'm.ricali@email.com'
+            });
         },
         $onSubmit(cmp) {
             console.log('$onSubmit', cmp);
