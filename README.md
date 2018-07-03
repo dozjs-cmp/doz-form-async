@@ -78,11 +78,17 @@ const app = new Doz({
 ## Events
 
 | Name | Args | Description |
-| ---- | ------- | ----------- |
+| ---- | ---- | ----------- |
 | success | `{object} response`, `{object} cmp` | Triggered on request success |
 | validationerror | `{object} errors`, `{object} cmp` | Triggered on validation error |
 | error | `{object} error`, `{object} cmp`| Triggered on request error |
 | submit | `{object} cmp` | Triggered on submit |
+
+## Methods
+| Name | Args | Description |
+| ---- | ---- | ----------- |
+| $getData | | Returns an object with form data|
+| $loadData | `{object} data` | Fill input through an object |
 
 #### CDN unpkg
 ```html
