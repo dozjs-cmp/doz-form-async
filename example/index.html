@@ -34,7 +34,7 @@
                  >
                     <form>
                         <input placeholder="First name" required="required" name="firstName">
-                        <input type="text" name="lastName" placeholder="Last name" required>
+                        <input d-ref="lastName" type="text" name="lastName" placeholder="Last name" required>
                         <input placeholder="Email" required="required" type="email" name="email">
                         <button type="submit">Submit</button>
                     </form>
@@ -42,6 +42,13 @@
                 </doz-form-async>
             `
         },
+
+        onMount() {
+            this.ref.lastName.addEventListener('change', e => {
+                console.log(e);
+            })
+        },
+
         $populate() {
             this.children.form.$loadData({
                 firstName: 'Manuel',
