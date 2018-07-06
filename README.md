@@ -73,7 +73,8 @@ const app = new Doz({
 | ---- | ------- | ----------- |
 | ajax | true | Ajax mode enabled |
 | resetOnSuccess | true | Reset input after success |
-| classError | error | css error class|
+| classError | error | css error class |
+| eventChangeOnLoad | true | Trigger input event change |
 
 ## Events
 
