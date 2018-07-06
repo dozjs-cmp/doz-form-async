@@ -1,4 +1,4 @@
-// [DozFormAsync]  Build version: 1.1.0  
+// [DozFormAsync]  Build version: 1.2.0  
  (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -2415,7 +2415,8 @@ exports.default = {
     props: {
         ajax: true,
         resetOnSuccess: true,
-        classError: 'error'
+        classError: 'error',
+        eventChangeOnLoad: true
     },
 
     onMountAsync: function onMountAsync() {
@@ -2493,10 +2494,17 @@ exports.default = {
         return data;
     },
     $loadData: function $loadData() {
+        var _this3 = this;
+
         var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
         this.$inputs.forEach(function (input) {
-            if (data.hasOwnProperty(input.name)) input.value = data[input.name];
+            if (data.hasOwnProperty(input.name)) {
+                var oldValue = input.value;
+                var newValue = data[input.name];
+                input.value = data[input.name];
+                if (_this3.props.eventChangeOnLoad && oldValue !== newValue) input.dispatchEvent(new Event('change'));
+            }
         });
     }
 };
