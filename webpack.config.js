@@ -28,7 +28,12 @@ module.exports = (env, argv) => {
         },
         //externals: argv.mode === 'production' ? [nodeExternals()] : [],
         externals: {
-            doz: 'Doz'
+            doz: {
+                commonjs: 'doz',
+                commonjs2: 'doz',
+                amd: 'doz',
+                root: 'Doz'
+            }
         },
         module: {
             rules: [

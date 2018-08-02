@@ -1,11 +1,11 @@
 // [DozFormAsync]  Build version: 1.2.1  
  (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("Doz"));
+		module.exports = factory(require("doz"));
 	else if(typeof define === 'function' && define.amd)
-		define("DozFormAsync", ["Doz"], factory);
+		define("DozFormAsync", ["doz"], factory);
 	else if(typeof exports === 'object')
-		exports["DozFormAsync"] = factory(require("Doz"));
+		exports["DozFormAsync"] = factory(require("doz"));
 	else
 		root["DozFormAsync"] = factory(root["Doz"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__34__) {
