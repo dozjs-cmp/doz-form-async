@@ -26,7 +26,10 @@ module.exports = (env, argv) => {
             modules: ['node_modules'],
             extensions: ['*', '.js']
         },
-        externals: argv.mode === 'production' ? [nodeExternals()] : [],
+        //externals: argv.mode === 'production' ? [nodeExternals()] : [],
+        externals: {
+            doz: 'Doz'
+        },
         module: {
             rules: [
                 {
