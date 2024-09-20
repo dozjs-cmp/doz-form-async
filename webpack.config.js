@@ -24,6 +24,7 @@ module.exports = {
         libraryTarget: 'umd',
         globalObject: 'this'
     },
+    devtool: false,
     resolve: {
         modules: ['node_modules'],
         extensions: ['*', '.js']
