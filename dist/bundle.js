@@ -1,4 +1,4 @@
-// [DozFormAsync]  Build version: 1.2.4  
+// [DozFormAsync]  Build version: 1.2.5  
  (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("doz"));
