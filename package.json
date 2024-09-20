@@ -2,7 +2,7 @@
     "name": "doz-form-async",
     "version": "1.2.4",
     "description": "A wrapper component that adds AJAX functionality to the form",
-    "main": "dist/bundle.js",
+    "main": "dist/bundle.min.js",
     "scripts": {
         "release:before": "npm run-script test",
         "release:major": "webpack --env.major --mode=production && npm run-script release:publish",
