@@ -1,6 +1,6 @@
 {
     "name": "doz-form-async",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "A wrapper component that adds AJAX functionality to the form",
     "main": "dist/bundle.js",
     "scripts": {
